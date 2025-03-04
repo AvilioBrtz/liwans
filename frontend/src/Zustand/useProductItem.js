@@ -1,4 +1,4 @@
-import { create } from "Zustand"
+import { create } from "zustand"
 
 const useProductItem = create((set) => ({
     product: JSON.parse(localStorage.getItem("product")) || null,
