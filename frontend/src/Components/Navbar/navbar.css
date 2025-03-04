@@ -1,0 +1,111 @@
+.navbar{
+    max-width: 95%;
+    max-height: 100px;
+    height: fit-content;
+    padding: 10px 0;
+    margin: 0 auto;
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.navbar > .logo{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar > .logo h1{
+    font-size: xx-large;/*32px, box-shadow: 0 1px 3px 0 rgb(0, 0, 0);*/
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+}
+
+.navbar > .searchtab{
+    width: 28%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 2px solid rgb(192,192,192, 0.9);
+    column-gap: 10px;
+}
+
+.searchtab input{
+    width: 65%;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+}
+
+.searchtab input:focus::-webkit-input-placeholder{
+	color: transparent;
+}
+
+.navbar > .nav-links{
+    width: 40%;
+    border-bottom: 1px solid rgb(192,192,192, 0.9);
+    height: 35px;
+}
+
+.nav-links ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: hsl(0, 0%, 20%, 0.6);
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.nav-links li{
+    height: 100%;
+    width: 153px;
+    background-color: transparent;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:  0.5s ease-out;
+}
+
+.nav-links li:active{
+    background-color: rgb(58, 58, 58);
+    color: white;
+}
+
+.red{
+    border-bottom: 2px solid tomato;
+}
+
+.navbar > .nav-btn button{
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 3px;
+    border-color: tomato;
+    transition: 1s ease;
+}
+
+.nav-btn button:hover{
+    background: linear-gradient(to right, black, tomato);
+    color: white;
+}
+
+.menulinks{
+    max-width: 95%;
+    margin: 0 auto;
+    height: 50px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.menulinks ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+}

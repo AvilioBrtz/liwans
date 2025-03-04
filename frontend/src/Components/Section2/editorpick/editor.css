@@ -1,0 +1,53 @@
+.editor-wrap{
+    width: 100%;
+    height: 350px;
+    background-color: rgb(192, 192, 192, 0.3);
+    padding: 10px 25px;
+    margin-top: -50px;
+    margin-bottom: 20px;
+}
+
+.editor-header, .inf-header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 10px;
+    height: 33px;
+    margin-bottom: 33px;
+    margin-top: 16px;
+}
+
+.editor-header h2, .inf-header h2{
+    font-weight: 400;
+    font-size: x-large;
+    letter-spacing: 1.5px;
+}
+
+.editor-content, .inf-content{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 10px;
+    margin-top: 30px;
+}
+
+.editor-content > .editor-pick img, .inf-content > .inf-pick img{
+    width: 173px;
+    height: 173px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.editor-pick, .inf-pick{
+    transition: transform 1s ease;
+}
+
+.editor-pick:hover, .inf-pick:hover {
+    transform: scale(1.1); 
+}
+
+.editor-pick h3, .inf-pick h3{
+    font-size: 20px;
+    font-weight: 400;
+}
